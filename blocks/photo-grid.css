@@ -1,0 +1,16 @@
+.photo-grid {
+  max-width: 1184px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.photo-grid__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.photo-grid__item {
+  list-style: none;
+  display: inline-block;
+}
