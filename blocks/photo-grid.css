@@ -1,6 +1,6 @@
 .photo-grid {
   max-width: 1184px;
-  margin: 0 auto;
+  margin: 118px auto 0;
   font-size: 0;
 }
 
@@ -8,9 +8,16 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
 }
 
 .photo-grid__item {
   list-style: none;
-  display: inline-block;
+}
+
+.photo-grid__item:hover {
+  transform: scale(1.05);
+  transition: all 0.2s linear;
 }

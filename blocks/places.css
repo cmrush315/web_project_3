@@ -1,0 +1,93 @@
+.places {
+  max-width: 984px;
+  margin: 0 auto;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 1fr;
+  gap: 48px 40px;
+  grid-template-areas:
+    "title artist"
+    "image paragraph"
+    "button paragraph";
+  margin-top: 96px;
+}
+
+.place__title {
+  grid-area: title;
+  max-width: 460px;
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #fff;
+}
+
+.place__artist {
+  grid-area: artist;
+  align-self: end;
+}
+
+.place__artist_title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  margin: 0;
+}
+
+.place__artist_name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  margin: 8px 0 0;
+}
+
+.place__image {
+  grid-area: image;
+}
+
+.place__paragraph {
+  grid-area: paragraph;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  color: #fff;
+}
+
+.place__text:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.place__button {
+  grid-area: button;
+  max-width: 248px;
+  height: 48px;
+  background: #0278fe;
+  border-radius: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  border: none;
+}
+
+.place__image_portland {
+  width: 460px;
+  height: 460px;
+}
