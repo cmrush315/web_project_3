@@ -1,13 +1,13 @@
-.info {
+.lead {
   max-width: 984px;
   margin: 0 auto;
 }
 
-.info__container {
+.lead__container {
   max-width: 785px;
 }
 
-.info__heading {
+.lead__heading {
   margin: 0;
   font-family: "Inter";
   font-style: normal;
@@ -17,7 +17,7 @@
   color: #ffffff;
 }
 
-.info__quote {
+.lead__quote {
   max-width: 720px;
   font-family: "Inter";
   font-style: normal;
@@ -27,7 +27,7 @@
   color: #fff;
 }
 
-.info__quote {
+.lead__quote {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -36,7 +36,7 @@
   color: #fff;
 }
 
-.info__citation {
+.lead__citation {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -46,7 +46,7 @@
   color: #fff;
 }
 
-.info__text {
+.lead__text {
   max-width: 720px;
   font-family: "Inter";
   font-style: normal;
@@ -54,4 +54,28 @@
   font-size: 16px;
   line-height: 26px;
   color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead {
+    padding: 0 24px;
+  }
+
+  .lead__heading {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .lead__quote,
+  .lead__citation {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lead__quote,
+  .lead__citation {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }

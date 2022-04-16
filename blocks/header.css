@@ -30,3 +30,15 @@
   margin: 64px 0 92px 0;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .header__title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .header__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
