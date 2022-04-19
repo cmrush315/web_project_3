@@ -56,7 +56,6 @@
 
 .places__image {
   grid-area: image;
-  display: hidden;
 }
 
 .place__paragraph {
@@ -84,13 +83,21 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  text-decoration: none;
   color: #fff;
   border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.place__button:hover {
+  background-color: #0063d2;
 }
 
 .places__image_portland {
   width: 460px;
-  height: 460px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -103,15 +110,9 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .places {
-    padding: 0;
-  }
-}
 @media screen and (max-width: 1000px) {
   .place {
     max-width: 768px;
-
     margin: 64px auto 0;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -124,5 +125,11 @@
 
   .place__image {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .places {
+    padding: 0;
   }
 }
