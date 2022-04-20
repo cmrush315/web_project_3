@@ -14,7 +14,7 @@
   font-weight: 900;
   font-size: 54px;
   line-height: 58px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .lead__quote {
@@ -28,6 +28,7 @@
 }
 
 .lead__citation {
+  max-width: 720px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -51,22 +52,12 @@
   .lead {
     padding: 0 24px;
   }
+}
 
+@media screen and (max-width: 768px) {
   .lead__heading {
+    max-width: 288px;
     font-size: 32px;
     line-height: 35px;
-  }
-
-  .lead__quote,
-  .lead__citation {
-    font-size: 24px;
-    line-height: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .lead__quote,
-  .lead__citation {
-    font-size: 24px;
-    line-height: 30px;
   }
 }

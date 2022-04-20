@@ -1,6 +1,0 @@
-@media screen and (min-width: 1280px) {
-  .photo-grid__item:hover {
-    transform: scale(1.05);
-    transition: all 0.2s linear;
-  }
-}

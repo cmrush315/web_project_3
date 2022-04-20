@@ -1,5 +1,5 @@
 .cover {
-  min-height: 720px;
+  min-height: 740px;
   max-width: 1184px;
   margin: 92px auto 0;
   position: relative;
@@ -34,6 +34,7 @@
   padding: 46px 0;
 }
 .cover__title {
+  margin: 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -55,9 +56,10 @@
 
 .cover__button {
   background: #0278fe;
+  max-width: 137px;
   border-radius: 4px;
   border-style: none;
-  margin-top: 32px;
+  margin: 32px auto 0;
   padding: 13px 20px;
   font-family: "Inter";
   font-style: normal;
@@ -76,8 +78,31 @@
   background-color: #0063d2;
 }
 
+@media screen and (max-width: 1280px) {
+  .cover {
+    min-height: 745px;
+    max-width: 746px;
+  }
+}
 @media screen and (max-width: 760px) {
   .cover {
-    min-height: 254px;
+    min-height: 253px;
+    max-height: 254px;
+    margin-bottom: 64px;
+  }
+
+  .cover__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .cover__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .cover__button {
+    width: 137px;
   }
 }

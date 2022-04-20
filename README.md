@@ -18,4 +18,8 @@ Responsive Design Techniques
 
 **Link to Github Repository**
 
-- [Link to GitHub Repository](https://github.com/cmrush315/web_project_3.git)
+(https://github.com/cmrush315/web_project_3.git)
+
+**Link to Github Pages**
+
+(https://cmrush315.github.io/web_project_3/)

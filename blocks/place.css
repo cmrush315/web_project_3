@@ -1,0 +1,127 @@
+.place {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 1fr;
+  gap: 48px 40px;
+  grid-template-areas:
+    "title artist"
+    "image paragraph"
+    "button paragraph";
+  margin-top: 96px;
+}
+
+.place__title {
+  grid-area: title;
+  max-width: 460px;
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #fff;
+}
+
+.place__artist {
+  grid-area: artist;
+  align-self: end;
+}
+
+.place__artist-heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin: 0;
+}
+
+.place__artist-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  margin: 8px 0 0;
+}
+
+.place__image {
+  grid-area: image;
+  max-width: 460px;
+}
+
+.place__paragraph {
+  grid-area: paragraph;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  color: #fff;
+}
+
+.place__text:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.place__button {
+  grid-area: button;
+  max-width: 248px;
+  height: 48px;
+  background: #0278fe;
+  border-radius: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.place__button:hover {
+  background-color: #0063d2;
+}
+
+@media screen and (max-width: 760px) {
+  .place {
+    max-width: 768px;
+    margin: 64px auto 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "paragraph"
+      "button";
+  }
+
+  .place__title {
+    padding: 0 16px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .place__artist {
+    padding: 0 16px;
+  }
+  .place__image {
+    width: 100%;
+  }
+
+  .place__paragraph {
+    padding: 0 16px;
+  }
+
+  .place-button {
+    padding-left: 16px;
+  }
+}

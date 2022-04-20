@@ -19,9 +19,9 @@
 
 @media screen and (max-width: 1280px) {
   .photo-grid {
-    margin: 0 auto;
+    margin: 90px auto 88px;
     padding: 0 24px;
-    max-width: 1020px;
+    max-width: 720px;
   }
 
   .photo-grid__items {
@@ -37,16 +37,11 @@
 
 @media screen and (max-width: 784px) {
   .photo-grid {
-    padding: 24px;
+    padding: 0 16px;
+    margin-bottom: 62px;
   }
   .photo-grid__items {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .photo-grid {
-    padding: 0;
   }
 }
