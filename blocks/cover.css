@@ -21,6 +21,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(42, 44, 47, 0.5);
   z-index: -1;
 }
 
@@ -35,7 +36,7 @@
 }
 .cover__title {
   margin: 0;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
@@ -45,7 +46,7 @@
 }
 .cover__text {
   margin: 0;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
