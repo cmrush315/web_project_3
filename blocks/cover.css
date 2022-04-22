@@ -1,6 +1,6 @@
 .cover {
   min-height: 740px;
-  max-width: 1184px;
+  width: 1184px;
   margin: 92px auto 0;
   position: relative;
   display: flex;
@@ -36,7 +36,7 @@
   padding: 46px 0;
 }
 .cover__title {
-  margin: 0;
+  margin: 0 0 32px 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -83,14 +83,15 @@
 @media screen and (max-width: 1280px) {
   .cover {
     min-height: 745px;
-    max-width: 746px;
+    max-width: 768px;
   }
 }
 @media screen and (max-width: 760px) {
   .cover {
     min-height: 253px;
     max-height: 254px;
-    margin-bottom: 64px;
+    width: 100%;
+    margin: 64px 0;
   }
 
   .cover__title {
