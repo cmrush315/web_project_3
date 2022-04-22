@@ -55,7 +55,7 @@
 
 .place__image {
   grid-area: image;
-  max-width: 460px;
+  max-width: 100%;
 }
 
 .place__paragraph {
@@ -65,7 +65,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 163%;
+  line-height: 29px;
   color: #fff;
 }
 
@@ -105,6 +105,11 @@
     gap: 46px 28px;
   }
 
+  .place__title {
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 46px;
+  }
   .place__paragraph {
     font-size: 16px;
     line-height: 163%;
@@ -123,6 +128,7 @@
       "image"
       "paragraph"
       "button";
+    align-items: center;
   }
 
   .place__title {
@@ -145,9 +151,10 @@
     line-height: 163%;
   }
 
-  .place-button {
-    width: 288px;
-    padding-left: 16px;
+  .place__button {
+    max-width: 320px;
+    align-items: center;
     justify-content: center;
+    margin: 0 16px;
   }
 }
