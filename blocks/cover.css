@@ -7,6 +7,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(../images/cover__image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
 }
 
 .cover::before {
@@ -17,15 +22,11 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url(../images/cover__image.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(42, 44, 47, 0.5);
+  background: rgba(42, 44, 47, 0.3);
   z-index: -1;
 }
 
-.cover:hover {
+.cover:hover::before {
   background-color: rgba(42, 44, 47, 0.8);
   transition: all 0.3s ease;
 }
@@ -36,7 +37,7 @@
 }
 .cover__title {
   margin: 0;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
@@ -46,7 +47,7 @@
 }
 .cover__text {
   margin: 0;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

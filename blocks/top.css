@@ -28,6 +28,7 @@
 
 @media screen and (max-width: 1280px) {
   .top__title {
+    max-width: 720px;
     font-size: 96px;
     line-height: 100px;
   }
@@ -40,6 +41,7 @@
 
 @media screen and (max-width: 768px) {
   .top__title {
+    max-width: 288px;
     font-size: 40px;
     line-height: 44px;
   }
