@@ -1,3 +1,8 @@
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .top__title {
   margin: 0 auto;
   max-width: 743px;
@@ -11,7 +16,8 @@
 }
 
 .top__subtitle {
-  margin: 52px 0 70px;
+  max-width: 703px;
+  margin: 52px auto 70px;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -22,8 +28,8 @@
 }
 
 .top__image {
-  margin-bottom: 92px;
-  width: 100%;
+  margin: 0 auto 92px;
+  max-width: 984px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -36,10 +42,11 @@
   }
 
   .top__subtitle {
+    max-width: 720px;
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
-    margin: 0 0 36px 0;
+    margin: 0 auto 36px;
   }
 
   .top__image {

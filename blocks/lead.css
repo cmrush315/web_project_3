@@ -8,6 +8,7 @@
 }
 
 .lead__heading {
+  max-width: 785px;
   margin: 0 0 40px 0;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
