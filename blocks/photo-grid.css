@@ -16,9 +16,8 @@
   list-style: none;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .photo-grid {
-    /* width: 720px; */
     margin: 90px auto 88px;
     padding: 0 24px;
   }
@@ -29,7 +28,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .photo-grid {
     padding: 0 16px;
     margin-bottom: 62px;

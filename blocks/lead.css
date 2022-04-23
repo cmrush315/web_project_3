@@ -9,7 +9,8 @@
 
 .lead__heading {
   max-width: 785px;
-  margin: 92px 0 40px 0;
+  margin-top: 0;
+  margin-bottom: 40px;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -52,21 +53,25 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .lead {
     padding: 0 24px;
   }
 
   .lead__heading {
     max-width: 720px;
+    margin-top: 0;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 350px) {
+  .lead {
+    max-width: 288px;
+    padding: 0 16px;
+  }
   .lead__heading {
     max-width: 288px;
     font-size: 32px;
     line-height: 35px;
-    padding: 0 16px;
   }
 }

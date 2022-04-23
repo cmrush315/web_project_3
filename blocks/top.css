@@ -37,7 +37,7 @@
   display: block;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1287px) {
   .top__title {
     max-width: 720px;
     font-weight: 900;
@@ -59,7 +59,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .top__title {
     max-width: 288px;
     font-size: 40px;

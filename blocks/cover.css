@@ -58,37 +58,31 @@
 
 .cover__button {
   background: #0278fe;
-  max-width: 137px;
-  border-radius: 4px;
-  border-style: none;
-  margin: 32px auto 0;
   padding: 13px 20px;
+  border-radius: 4px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #fff;
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  color: #fff;
+  display: table;
+  margin: 32px auto 0;
 }
 
 .cover__button:hover {
   background-color: #0063d2;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1280px) {
   .cover {
     min-height: 745px;
-    /* max-width: 768px; */
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 767px) {
   .cover {
-    min-height: 253px;
+    min-height: 768px;
     width: 100%;
     margin: 64px 0;
   }
@@ -96,6 +90,7 @@
   .cover__title {
     font-size: 32px;
     line-height: 35px;
+    margin-bottom: 16px;
   }
 
   .cover__text {
@@ -105,6 +100,12 @@
   }
 
   .cover__button {
-    width: 137px;
+    margin: 16px auto 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover {
+    min-height: 254px;
   }
 }

@@ -60,12 +60,12 @@
 
 .place__paragraph {
   grid-area: paragraph;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 29px;
+  line-height: 163%;
   color: #fff;
 }
 
@@ -78,29 +78,30 @@
 
 .place__button {
   grid-area: button;
-  max-width: 248px;
-  height: 48px;
   background: #0278fe;
+  padding: 13px 0;
   border-radius: 4px;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   text-decoration: none;
   color: #fff;
-  border: none;
+  text-align: center;
+  max-width: 248px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-self: flex-start;
 }
 
 .place__button:hover {
   background-color: #0063d2;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .place {
     gap: 46px 28px;
   }
@@ -109,6 +110,7 @@
     font-weight: 900;
     font-size: 42px;
     line-height: 46px;
+    margin-bottom: 0;
   }
   .place__paragraph {
     font-size: 16px;
@@ -116,10 +118,10 @@
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 767px) {
   .place {
     max-width: 768px;
-    margin: 64px auto 0;
+    margin: 0 auto 50px;
     gap: 50px;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -131,11 +133,14 @@
     align-items: center;
   }
 
+  .place.place:last-of-type {
+    margin: 0 auto;
+  }
+
   .place__title {
     padding: 0 16px;
     font-size: 32px;
     line-height: 35px;
-    margin: 0 0 30px 0;
   }
   .place__artist {
     padding: 0 16px;
@@ -152,9 +157,13 @@
   }
 
   .place__button {
-    max-width: 320px;
-    align-items: center;
-    justify-content: center;
-    margin: 0 16px;
+    margin: 0 auto;
+    padding: 13px 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .place {
+    gap: 30px;
   }
 }
