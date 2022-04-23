@@ -24,11 +24,12 @@
   right: 0;
   background: rgba(42, 44, 47, 0.3);
   z-index: -1;
+
+  transition: all 0.3s ease;
 }
 
 .cover:hover::before {
   background-color: rgba(42, 44, 47, 0.8);
-  transition: all 0.3s ease;
 }
 
 .cover__visit {
