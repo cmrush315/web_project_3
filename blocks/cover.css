@@ -32,6 +32,7 @@
 }
 
 .cover__visit {
+  max-width: 656px;
   text-align: center;
   padding: 46px 0;
 }

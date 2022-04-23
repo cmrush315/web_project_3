@@ -27,6 +27,7 @@
 }
 
 .place__artist {
+  max-width: 456px;
   grid-area: artist;
   align-self: end;
 }
@@ -60,6 +61,7 @@
 
 .place__paragraph {
   grid-area: paragraph;
+  max-width: 484px;
   margin: 0 auto;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
@@ -101,24 +103,35 @@
   background-color: #0063d2;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1020px) {
   .place {
     gap: 46px 28px;
+    margin-bottom: 72px;
   }
 
   .place__title {
+    max-width: 340px;
     font-weight: 900;
     font-size: 42px;
     line-height: 46px;
     margin-bottom: 0;
   }
+
   .place__paragraph {
     font-size: 16px;
     line-height: 163%;
   }
+
+  .place__artist {
+    max-width: 316px;
+  }
+
+  .place__button {
+    margin-top: 2px;
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .place {
     max-width: 768px;
     margin: 0 auto 50px;
